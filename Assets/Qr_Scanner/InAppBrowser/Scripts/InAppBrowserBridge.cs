@@ -54,7 +54,8 @@ public class InAppBrowserBridge : MonoBehaviour {
 		onBrowserClosed.Invoke();
 	}
 
-	void OnAndroidBackButtonPressed() {
+	void OnAndroidBackButtonPressed()
+	{
 		Debug.Log("InAppBrowser: Android back button pressed");
 		onAndroidBackButtonPressed.Invoke();
 	}
