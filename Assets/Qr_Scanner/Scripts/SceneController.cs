@@ -9,8 +9,8 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
-    public void OpenURL()
-    {
-        Application.OpenURL(QRDecodeTest.text_to_pass);
-    }
+    //public void OpenURL()
+    //{
+    //    Application.OpenURL(QRDecodeTest.text_to_pass);
+    //}
 }
