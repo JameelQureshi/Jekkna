@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Qr_Scanner/Scenes/PlaceVedio.unity
     guid: 1d500f24ba1b24a9985ab3dbcddb1b0d
+  - enabled: 1
+    path: Assets/Qr_Scanner/Scenes/DeepLinker.unity
+    guid: fe77fafe237614626b1c4fd8caf42975
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}
