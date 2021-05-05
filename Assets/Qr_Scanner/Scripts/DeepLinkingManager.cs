@@ -54,7 +54,7 @@ public class DeepLinkingManager : MonoBehaviour
         videoId = videoData[1];
         VideoUrl = ("https://dev.jekkna.com/wp-content/uploads/arvideos/" + videoId + ".mp4");
 
-
+      
         bool validScene;
         switch (sceneName)
         {
@@ -68,6 +68,11 @@ public class DeepLinkingManager : MonoBehaviour
         Debug.Log("Url From Web: " + deeplinkURL);
 
         //message.text = "From Web: " + VideoUrl + " Name: " + sceneName;
-        if (validScene) SceneManager.LoadScene("DeepLinker");
+        if (validScene)
+        {
+            SplitLink.VideoColor = color;
+            SplitLink.VideoUrl = VideoUrl;
+            SceneManager.LoadScene("PlaceVedio");
+        }
     }
 }
