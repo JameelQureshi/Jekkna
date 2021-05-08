@@ -27,7 +27,7 @@ public class UrlReciever : MonoBehaviour
         {
             GetComponent<MeshRenderer>().material = materials[1];
         }
-        else if (SplitLink.VideoColor == "00f00")
+        else if (SplitLink.VideoColor == "00ff00")
         {
             GetComponent<MeshRenderer>().material = materials[2];
         }

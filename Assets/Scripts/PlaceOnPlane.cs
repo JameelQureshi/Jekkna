@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.Events;
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
@@ -18,6 +19,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
         [SerializeField]
         [Tooltip("Instantiates this prefab on a plane at the touch location.")]
         GameObject m_PlacedPrefab;
+
+        public UnityEvent featherPlane;
 
         /// <summary>
         /// The prefab to instantiate on touch.
@@ -73,6 +76,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 if (spawnedObject == null)
                 {
                     spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+                    featherPlane.Invoke();
                 }
                 //else
                 //{
