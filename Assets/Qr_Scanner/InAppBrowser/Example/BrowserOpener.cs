@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class BrowserOpener : MonoBehaviour {
 
@@ -14,7 +15,8 @@ public class BrowserOpener : MonoBehaviour {
 		InAppBrowser.OpenURL(QRDecodeTest.text_to_pass);
 	}
 
-	public void OnClearCacheClicked() {
+	public void OnClearCacheClicked()
+	{
 		InAppBrowser.ClearCache();
 	}
 }

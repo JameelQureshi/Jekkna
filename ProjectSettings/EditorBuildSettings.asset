@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Qr_Scanner/Scenes/UniWebViewDemo.unity
+    guid: 938c077f40a814d4584ce2ad17947cf3
+  - enabled: 1
     path: Assets/Qr_Scanner/Scenes/QRScanScene.unity
     guid: 3ea0e74dd14b4334ca6665a61d8e0cbe
   - enabled: 1

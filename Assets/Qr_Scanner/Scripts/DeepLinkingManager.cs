@@ -45,7 +45,7 @@ public class DeepLinkingManager : MonoBehaviour
 
         string[] split_urls = url.Split('?');
 
-        string[] data = split_urls[1].Split('_');
+        string[] data = split_urls[1].Split('&');
 
         string sceneName = data[0];
 
