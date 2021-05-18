@@ -6,17 +6,19 @@ public class LinkWebManager : MonoBehaviour
 {
     public RectTransform refRect;
     private UniWebView webView;
+    private string urlreasiever;
 
 
     // Start is called before the first frame update
-    void Start()
+    public void OpenLink()
     {
 
         webView = gameObject.AddComponent<UniWebView>();
         webView.ReferenceRectTransform = refRect;
 
         // Load a URL.
-        webView.Load("");
+        urlreasiever=QRDecodeTest.text_to_pass;
+        webView.Load(urlreasiever);
         webView.BackgroundColor = new Color(0, 0, 0, 0);
 
         webView.SetShowSpinnerWhileLoading(true);
