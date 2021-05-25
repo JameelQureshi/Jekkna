@@ -75,8 +75,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
                 if (spawnedObject == null)
                 {
+                    Handheld.Vibrate();
                     spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
                     featherPlane.Invoke();
+
                 }
                 //else
                 //{
