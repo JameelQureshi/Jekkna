@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class WebViewManager : MonoBehaviour
 {
     public RectTransform refRect;
     private UniWebView webView;
-  
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +17,12 @@ public class WebViewManager : MonoBehaviour
         webView.ReferenceRectTransform = refRect;
 
         // Load a URL.
-        webView.Load("https://dev.jekkna.com/");
+        webView.Load("https://www.jekkna.com/");
         webView.BackgroundColor = new Color(0, 0, 0, 0);
 
         webView.SetShowSpinnerWhileLoading(true);
         // Show it.
         webView.Show();
-       
-
     }
+
 }

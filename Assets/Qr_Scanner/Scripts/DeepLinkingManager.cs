@@ -52,7 +52,7 @@ public class DeepLinkingManager : MonoBehaviour
         string[] videoData = data[1].Split('-');
         color = videoData[0];
         videoId = videoData[1];
-        VideoUrl = ("https://dev.jekkna.com/wp-content/uploads/arvideos/" + videoId + ".mp4");
+        VideoUrl = ("https://www.jekkna.com/wp-content/uploads/arvideos/" + videoId + ".mp4");
 
       
         bool validScene;

@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class InternetManager : MonoBehaviour
 {
     public GameObject errorPopup;
-    
+   
 
     public void Start()
     {
@@ -23,7 +24,8 @@ public class InternetManager : MonoBehaviour
         {
             errorPopup.SetActive(false);
         }
-
+        
+      
     }
 
     public void quitGame()
@@ -32,5 +34,7 @@ public class InternetManager : MonoBehaviour
         Application.Quit();
         
     }
-     
+
+  
+
 }

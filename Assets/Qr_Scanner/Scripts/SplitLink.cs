@@ -8,7 +8,7 @@ using UnityEngine.Video;
 public class SplitLink : MonoBehaviour
 {
    // public string url;
-   public static string VideoColor;
+    public static string VideoColor;
     string videoID;
     public static string VideoUrl;
 
@@ -17,6 +17,7 @@ public class SplitLink : MonoBehaviour
     public UnityEvent OnVideoNotFound;
     public UnityEvent OnVideoFound;
     public static SplitLink Instance = null;
+
     private void Awake()
     {
         if (Instance != null)
@@ -28,8 +29,8 @@ public class SplitLink : MonoBehaviour
     }
     void Start()
     {
-        // url = "https://dev.jekkna.com/product/sba014/#1894135";
-        //url = "https://dev.jekkna.com/product/sba009-00ff00/#6544967";
+        // url = "https://www.jekkna.com/product/sba014/#1894135";
+        //url = "https://www.jekkna.com/product/sba009-00ff00/#6544967";
     }
 
 
@@ -50,7 +51,7 @@ public class SplitLink : MonoBehaviour
             Debug.Log("Color is: " + VideoColor);
             //Debug.Log("VideoID is: " + videoID);
             
-            VideoUrl = ("https://dev.jekkna.com/wp-content/uploads/arvideos/" + videoID + ".mp4");
+            VideoUrl = ("https://www.jekkna.com/wp-content/uploads/arvideos/" + videoID + ".mp4");
             OnVideoFound.Invoke();
         }
         else
