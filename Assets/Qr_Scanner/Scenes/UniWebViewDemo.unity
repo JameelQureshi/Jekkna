@@ -873,5 +873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: webView
       objectReference: {fileID: 0}
+    - target: {fileID: 765247350016823932, guid: 4a2a62da7526d4b0699c3587fcf413a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a2a62da7526d4b0699c3587fcf413a9, type: 3}

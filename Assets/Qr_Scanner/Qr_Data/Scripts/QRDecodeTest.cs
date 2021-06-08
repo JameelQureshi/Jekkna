@@ -50,6 +50,8 @@ public class QRDecodeTest : MonoBehaviour
 
 	private void qrScanFinished(string dataText)
 	{
+		Debug.Log(dataText);
+
 		if (isOpenBrowserIfUrl) {
 			if (Utility.CheckIsUrlFormat(dataText))
 			{
