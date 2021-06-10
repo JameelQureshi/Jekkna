@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(index);
         IndexCopy=index;
+        print("Scan Qr");
     }
   
    
