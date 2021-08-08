@@ -50,7 +50,8 @@ public class QRDecodeTest : MonoBehaviour
 
 	private void qrScanFinished(string dataText)
 	{
-		Debug.Log(dataText);
+
+		Debug.Log("Final Data:"+dataText);
 
 		if (isOpenBrowserIfUrl) {
 			if (Utility.CheckIsUrlFormat(dataText))
@@ -69,6 +70,7 @@ public class QRDecodeTest : MonoBehaviour
         if (text_to_pass.Contains("jekkna"))
         {
 			SplitLink.Instance.AnalyseURL(text_to_pass);
+			print(text_to_pass);
 			OnQRScanned.Invoke();
         }
         else
